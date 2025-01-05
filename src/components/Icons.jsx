@@ -7,10 +7,12 @@ const Icons = () => {
   const gra = "linear-gradient(to right, red , yellow)";
   return (
     <div>
-      <a href="#" target="_blank">
-        <LinkedInIcon sx={{ color: "red" }} />
+      <a href="#" target="_blank" className="mr-5">
+        <LinkedInIcon />
       </a>
-      <XIcon />
+      <a href="#" target="_blank" className="mr-5">
+        <XIcon />
+      </a>
     </div>
   );
 };

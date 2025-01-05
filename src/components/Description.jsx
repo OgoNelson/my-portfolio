@@ -1,14 +1,22 @@
 import React from "react";
+import dp from "../assets/images/my_dp.jpg";
 
 const Description = () => {
   return (
-    <div className="flex size-96 w-[80vw] justify-between">
+    <div className="flex w-[69vw] h-[40vh] justify-between">
       <div>
-        <span>Hello, I'M Ogo Nelson,</span>
+        <h1 className="bg-gradient-to-r from-[#13ADC7] via-[#6978D1] to-[#945DD6] text-transparent bg-clip-text">
+          Hello, I'M Ogo Nelson,
+        </h1>
         <br />
-        <span>frontend developer</span>
+        <h1>frontend developer</h1>
+        <h4>
+          Crafting Engaging User Experiences: Meet the software Developer
+          shaping the Web with focus on collaboration, communication, and
+          passion.
+        </h4>
       </div>
-      <div className=" bg-white w-[20vw] h-[20vh]"></div>
+      <img src={dp} alt="dp" className="h-[40vh] w-[20vw] opacity-30 rounded-full" />
     </div>
   );
 };
