@@ -2,7 +2,8 @@ import React from "react";
 import ButtonLive from "../components/ButtonLive";
 import Description from "../components/Description";
 import Navbar from "../components/Navbar";
-import data from "../../database/data";
+import SliderCard from "../components/SliderCard";
+import Slider from "../components/SliderCard";
 
 const HomePage = () => {
   return (
@@ -16,15 +17,9 @@ const HomePage = () => {
         </div>
       </section>
       {/* Projects page */}
-      <section id="projects" className="h-[160vh] w-[75vw] my-0 mx-auto">
+      <section id="projects" className="h-[100vh] w-[75vw] mx-auto">
         <h2>Projects</h2>
-        <div className="grid grid-cols-3 gap-3 mt-14">
-          {data.map((data) => (
-            <div key={data.id} className="bg-slate-300 h-[70vh] w-[24vw] rounded-xl">
-              <h2>{data.title}</h2>
-            </div>
-          ))}
-        </div>
+        <SliderCard/>
       </section>
     </div>
   );

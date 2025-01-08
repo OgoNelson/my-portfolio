@@ -6,6 +6,10 @@
   display: none;
 }
 
+.slick-slide > div {
+  margin: 0 7px;
+}
+
 @layer base {
   h1 {
     @apply text-4xl;
