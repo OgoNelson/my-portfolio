@@ -1,5 +1,4 @@
 import React from "react";
-import dp from "../assets/images/my_dp.jpg";
 
 const Description = () => {
   return (
@@ -16,7 +15,7 @@ const Description = () => {
           passion.
         </h4>
       </div>
-      <img src={dp} alt="dp" className="h-[40vh] w-[20vw] opacity-30 rounded-full" />
+      <img src="/images/my_dp.jpg" alt="dp" className="h-[40vh] w-[20vw] opacity-30 rounded-full" />
     </div>
   );
 };

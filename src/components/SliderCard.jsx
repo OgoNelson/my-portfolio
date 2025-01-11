@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../../database/data";
 import ButtonLive from "./ButtonLive";
+import ButtonGitHub from "./ButtonGitHub";
 
 const SliderCard = () => {
   const settings = {
@@ -18,13 +19,14 @@ const SliderCard = () => {
       <Slider {...settings}>
         {data.map((data) => (
           <div className="h-[70vh] border-[0.01rem] p-4 border-[#6978D1] rounded-xl">
-            <div>{data.img}</div>
-            <div>
+            <img src={data.img} alt="" className="h-[30vh] w-full mb-4" />
+            <div className="h-[20vh] mb-4">
               <h3>{data.title}</h3>
               <h4>{data.Des}</h4>
             </div>
-            <div>
+            <div className="h-[7vh]">
               <ButtonLive action="live preview" />
+              <ButtonGitHub />
             </div>
           </div>
         ))}
