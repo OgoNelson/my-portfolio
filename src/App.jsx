@@ -4,7 +4,7 @@ import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<p>Error: Page Not Found</p>} />

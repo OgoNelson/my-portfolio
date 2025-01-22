@@ -15,7 +15,7 @@ const Description = () => {
           passion.
         </h4>
       </div>
-      <img src="/images/my_dp.jpg" alt="dp" className="h-[40vh] w-[20vw] opacity-30 rounded-full" />
+      <img src={import.meta.env.BASE_URL + "/images/my_dp.jpg"} alt="dp" className="h-[40vh] w-[20vw] opacity-30 rounded-full" />
     </div>
   );
 };

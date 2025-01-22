@@ -19,7 +19,11 @@ const SliderCard = () => {
       <Slider {...settings}>
         {data.map((data) => (
           <div className="h-[70vh] border-[0.01rem] p-4 border-[#6978D1] rounded-xl">
-            <img src={data.img} alt="" className="h-[30vh] w-full mb-4" />
+            <img
+              src={import.meta.env.BASE_URL + data.img}
+              alt=""
+              className="h-[30vh] w-full mb-4"
+            />
             <div className="h-[20vh] mb-4">
               <h3>{data.title}</h3>
               <h4>{data.Des}</h4>
